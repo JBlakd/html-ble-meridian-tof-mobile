@@ -1,0 +1,186 @@
+body{
+  background-color: #222;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+div.header {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bolder;
+  font-size: 4vh;
+  color: white;
+  background-color: #42484a;
+  height: 5.5%;
+  line-height: 1%;
+  width: 100%;
+}
+
+div.terminal {
+  position: absolute;
+  font-size: 2vh;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+.terminalDiv {
+  display: inline-block;
+  margin: 0.5% 0.5%;
+  width: 48.8%;
+  height: 20%;
+  background-color: #42484a;
+}
+
+.dataDiv {
+  display: inline-block;
+  margin: 0.5% 0.5%;
+  width: 48.8%;
+  height: 20%;
+  background-color: #3d3e51;
+}
+
+div.footer {
+  font-family: 'Teko', sans-serif;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 4vh;
+  color: white;
+  background-color: #42484a;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+
+div.inputfield {
+  text-align: left;
+  width: calc(100% - 150px);
+  background-color: inherit;
+  height: inherit;
+}
+
+.title-header {
+  font-weight: bold;
+}
+
+button {
+  text-align: center;
+  height: 100%;
+  width: inherit;
+  background-color: inherit;
+  border: none;
+  color: white;
+  margin: auto;
+}
+
+textarea.terminal {
+  position: absolute;
+  color: white;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  resize: none;
+  border: none;
+}
+
+/* .cardDiv {
+  float: left;
+  display: table-cell;
+  text-align: center;
+  color: white;
+  background-color: #4f5b66;
+  height: 12%;
+  width: 20%;
+} */
+
+.bodyDiv {
+  /* display: inline-block; */
+  text-align: center;
+  color: white;
+  background-color: #42484a;
+  height: 93%;
+  width: 99%;
+  margin: 0.5%;
+  padding-top: 0.01%;
+}
+
+input.input {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 3vh;
+  position: absolute;
+  line-height: 50px;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  resize: none;
+  border: none;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+#heatImg {
+  margin-top: 0%;
+  /* margin-bottom: 1.5%; */
+}
+
+#tempScale {
+  margin-left: 0.5%;
+}
+
+.custom-card-class {
+  text-align: center;
+}
+
+.custom-card-header-class {
+  /* padding: 0; */
+  margin-top: 0;
+}
+
+.custom-row-class {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.custom-card-body-class {
+  padding-top: 0.25%;
+  padding-bottom: 2%;
+}
+
+.custom-title-container-class {
+  text-align: center;
+}
+
+.custom-buttons-row {
+  /* padding-bottom: 0.5%; */
+  font-size: 1.5rem;
+}
+
+#connect-button {
+  background-color: #007bff;
+  padding-left: 0.6%;
+  padding-right: 0.6%;
+}
+
+#disconnect-button {
+  background-color: red;
+}
+
+.button {
+  margin-left: 0.25%;
+  margin-right: 0.25%;
+  padding: 0.25%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  /* height: 1%;
+  width: 1.75%; */
+}
