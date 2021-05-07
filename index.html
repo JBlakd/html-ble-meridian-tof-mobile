@@ -13,28 +13,6 @@
 </head>
 
 <body>
-  <!-- <div class="header">Web App For Meridian TOF Sensor
-    <div id="connect" class="button" style="background-color: #007bff;">
-      <button onclick="connect()">
-        <i class="fa fa-bluetooth-b" aria-hidden="true"></i>
-      </button>
-    </div>
-    <div class="button" style="background-color: red;">
-      <button onclick="disconnect()">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button>
-    </div>
-    <div class="button" style="background-color: #42484a;">
-      <button onclick="scaleUp()">
-        <i class="fa fa-search-plus" aria-hidden="true"></i>
-      </button>
-    </div>
-    <div class="button" style="background-color: #42484a;">
-      <button onclick="scaleDown()">
-        <i class="fa fa-search-minus" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div> -->
   <div class="container-fluid custom-title-container-class">
     <div class="row">
       <div class="col-lg-12 bg-dark text-white">
@@ -66,7 +44,50 @@
     <canvas id="distributionScale" width="100" height="75"></canvas>
   </div>
 
-  <div class="row custom-row-class">
+  <div class="row text-light">
+    <div class="col-8">
+      TOF Distance (mm)
+    </div>
+    <div class="col">
+      <div id="tofValue">
+        Loading...
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-light">
+    <div class="col-8">
+      Median Temp Around Cursor (49px)
+    </div>
+    <div class="col">
+      <div id="meanTempValue">
+        Loading...
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-light">
+    <div class="col-8">
+      Highest Temp
+    </div>
+    <div class="col">
+      <div id="highestTempValue">
+        Loading...
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-light">
+    <div class="col-8">
+      Display Dimensions (px)
+    </div>
+    <div class="col">
+      <div id="imgDimValue">
+        Loading...
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row custom-row-class">
 
     <div class="col-lg-3">
       <div class="card bg-dark text-white custom-card-class">
@@ -104,7 +125,7 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 
   <script src="index.js" charset="utf-8"></script>
 </body>
