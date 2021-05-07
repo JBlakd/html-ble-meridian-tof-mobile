@@ -157,6 +157,7 @@ function handleNotifications(event) {
       highestBucket = findHighestBucket();
       console.log("highestBucket: " + highestBucket);
       console.log("highestBucketTemp: " + denormaliseRange(rangeCelsius[0], rangeCelsius[1], buckets[highestBucket][0]));
+      document.getElementById("mostFrequentBucket").innerHTML = denormaliseRange(rangeCelsius[0], rangeCelsius[1], buckets[highestBucket][0]).toString();
       draw();
       // console.log("bucketiseCalled: " + bucketiseCalled)
       // console.log("bucketsCount: " + bucketsCount);
