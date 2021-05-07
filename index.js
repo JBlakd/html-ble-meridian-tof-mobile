@@ -19,7 +19,7 @@ var rgbStrArray = ['rgb(255,2,240)','rgb(255,0,208)','rgb(255,0,144)','rgb(255,0
 'rgb(0,255,131)','rgb(0,255,244)','rgb(0,180,255)','rgb(0,116,255)','rgb(0,50,255)',
 'rgb(0,0,255)'];
 var scalingFactor = [5,6,7,8];
-var scalingFactorIndex = scalingFactor.length - 1;
+var scalingFactorIndex = 0;
 var highestTemperatureNormalised = 0;
 var highestTemperatureCelsius = -300;
 var highestTempVisualCoordinates = [];
