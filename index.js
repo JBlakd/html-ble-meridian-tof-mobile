@@ -157,7 +157,7 @@ function handleNotifications(event) {
       highestBucket = findHighestBucket();
       console.log("highestBucket: " + highestBucket);
       console.log("highestBucketTemp: " + denormaliseRange(rangeCelsius[0], rangeCelsius[1], buckets[highestBucket][0]));
-      document.getElementById("mostFrequentBucket").innerHTML = denormaliseRange(rangeCelsius[0], rangeCelsius[1], buckets[highestBucket][0]).toString();
+      document.getElementById("mostFrequentBucket").innerHTML = denormaliseRange(rangeCelsius[0], rangeCelsius[1], buckets[highestBucket][0]).toFixed(2);
       draw();
       // console.log("bucketiseCalled: " + bucketiseCalled)
       // console.log("bucketsCount: " + bucketsCount);
@@ -335,7 +335,7 @@ function draw() {
   }
   // calculate highestTemperatureCelsius
   highestTemperatureCelsius = denormaliseRange(rangeCelsius[0], rangeCelsius[1], highestTemperatureNormalised);
-  document.getElementById("highestTempValue").innerHTML = highestTemperatureCelsius.toString()
+  document.getElementById("highestTempValue").innerHTML = highestTemperatureCelsius.toFixed(2)
   + "°C at (" + highestTempVisualCoordinates[0] + "," + highestTempVisualCoordinates[1] + ")";
 
   var highestTempArrayCoordinates = [(61-highestTempVisualCoordinates[0]),(79-highestTempVisualCoordinates[1])];
