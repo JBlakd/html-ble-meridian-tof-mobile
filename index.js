@@ -34,6 +34,7 @@ var bucketsNotCounted = 0;
 var humanTempLowerBound = 36;
 var highestBucket = 0;
 var numBuckets = 40;
+var endReached = 1;
 
 scaleElements();
 bucketsInit(numBuckets);
@@ -115,6 +116,11 @@ function handleNotifications(event) {
 
   // startFrame handler
   if (frameType === "startFrame") {
+    if (endReached == 0) {
+      document.getElementById("bandwidthWarning").innerHTML =
+        "Did not receive all frames. Please disable some other Bluetooth devices free up some bandwidth.";
+    }
+    endReached = 0;
     startFrameReceived = 1;
     // Put the TOF range inside global variable
     tofDistance = value.getUint16(2);
@@ -135,6 +141,8 @@ function handleNotifications(event) {
 
   //endFrame handler
   if (frameType === "endFrame") {
+    endReached = 1;
+    document.getElementById("bandwidthWarning").innerHTML = "";
     for (var i = 0; i < value.byteLength - 3; i+=2) {
       imgArray[wordCount] = normaliseRange(celsiusToTenthKelvin(rangeCelsius[0]),
         celsiusToTenthKelvin(rangeCelsius[1]), value.getUint16(i));
@@ -162,6 +170,9 @@ function handleNotifications(event) {
       // console.log("bucketiseCalled: " + bucketiseCalled)
       // console.log("bucketsCount: " + bucketsCount);
       // console.log("bucketsNotCounted: " + bucketsNotCounted);
+    } else {
+      document.getElementById("bandwidthWarning").innerHTML =
+        "Did not receive all frames. Please disable some other Bluetooth devices free up some bandwidth.";
     }
 
     // Clear variables

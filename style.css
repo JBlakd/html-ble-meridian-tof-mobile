@@ -176,6 +176,12 @@ input.input {
   background-color: red;
 }
 
+#bandwidthWarning {
+  display: inline-block;
+  color: red;
+  margin: 0;
+}
+
 .button {
   margin-left: 1%;
   margin-right: 1%;
